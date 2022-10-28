@@ -13,7 +13,7 @@ router.get("/", async (req, res, next) => {
     let table = await display_products(shop_id);
 
     res.render("users", {
-      title: "Welcome user to ATN shop",
+      title: "Store owner ATN shop",
       name: username,
       table_string: table,
     });
